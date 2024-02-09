@@ -10,7 +10,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class SingleThreadLatencyTest {
 
   //static String BASE_URL = "http://localhost:8080/hw1_war_exploded";
-  static String BASE_URL = "http://34.216.243.255:8080/hw1_war";
+  static String BASE_URL = "http://34.221.172.200:8080/hw1_war";
 
   public static void main(String[] args) {
 
