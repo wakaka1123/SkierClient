@@ -21,7 +21,7 @@ public class Runner {
   static AtomicInteger failedReqs = new AtomicInteger(0);
   static CountDownLatch latch = new CountDownLatch(1);
   //static String BASE_URL = "http://localhost:8080/hw1_war_exploded";
-  static String BASE_URL = "http://34.221.172.200:8080/hw1_war";
+  static String BASE_URL = "http://34.217.57.105:8080/hw1_war";
 
   public static void main(String[] args) throws InterruptedException {
     BlockingQueue<LiftRideEvent> buffer = new LinkedBlockingQueue<>();
@@ -67,6 +67,8 @@ public class Runner {
 
     System.out.println(successfulReqs + " requests are successful");
     System.out.println(failedReqs + " requests are failed");
+    System.out.println("Number of threads initially: " + NUM_THREADS + ", max number of threads: "
+        + (NUM_THREADS + moreThanCore));
     System.out.println("Wall time: " + (ed - st) + " ms");
     System.out.println(
         "Throughput: " + Math.round((double) TOTAL_REQS / (ed - st) * 1000) + " reqs/s");
