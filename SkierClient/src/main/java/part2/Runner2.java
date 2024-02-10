@@ -22,7 +22,7 @@ public class Runner2 {
   static AtomicInteger failedReqs = new AtomicInteger(0);
   static CountDownLatch latch = new CountDownLatch(1);
   //static String BASE_URL = "http://localhost:8080/hw1_war_exploded";
-  static String BASE_URL = "http://34.217.57.105:8080/hw1_war";
+  static String BASE_URL = "http://54.189.174.77:8080/hw1_war";
 
   public static void main(String[] args) throws InterruptedException {
     BlockingQueue<LiftRideEvent2> buffer = new LinkedBlockingQueue<>();
