@@ -7,10 +7,12 @@ import io.swagger.client.api.SkiersApi;
 import io.swagger.client.model.LiftRide;
 
 public class SkiersApiExample {
+  //static String BASE_URL = "http://localhost:8080/hw1_war_exploded";
+  static String BASE_URL = "http://54.189.174.77:8080/hw1_war";
 
   public static void main(String[] args) {
     ApiClient apiClient = new ApiClient();
-    apiClient.setBasePath("http://localhost:8080/hw1_war_exploded");
+    apiClient.setBasePath(BASE_URL);
     SkiersApi apiInstance = new SkiersApi(apiClient);
     Integer resortID = 56;
     String seasonID = "56";
